@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+textarea{
+    all:unset;
+}
+b{
+    font-size: 90px;
+}
+
+body{
+    background-color:rgb(237, 218, 218);
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.backGround{
+    position: absolute;
+    top:0;
+    z-index: -1;
+    background-image: linear-gradient(to right,rgba(39, 29, 234,0.8),rgba(61, 120, 216,0.8));
+    width: 100vw;
+    height: 300px;
+
+}
+
+.topHeading{
+    font-size: 70px;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.container{
+    display: flex;
+    margin-top: 50px;
+    background-color: aqua;
+    height: 500px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0,0.22);
+    overflow: hidden;
+}
+.wordField{
+    flex: 2;
+    resize: none;
+    background-color: aliceblue;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px ;
+}
+.details{
+    flex:1;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subContainer{
+    flex: 1 150px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.c1,.c2{
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.c1,.c3{
+    border-right: 1px solid rgba(0,0,0,0.05);
+}
+.count{
+    font-size: 40px;
+}
+.name{
+    font-size: 20px;
+}
+
+@media(max-width : 1060px){
+    .container{
+        flex-direction: column;
+        height: 80vh;
+    }
+    .topHeading{
+        font-size: 7vw;
+    }
+    b{
+        font-size: 9vw;
+    }
+}
